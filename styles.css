@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #f2f2f2;
+    font-family: Arial;
+}
+
+.cajaPadre {
+    background: #2e294a;
+    width: 700px;
+    overflow: hidden;/*nos permite solucionar el erroe de que desparezca
+    la caja padre cuando se posicionan dos cajas hijos una a la derecha y
+    otra a la izquierda*/
+}
+
+.caja {
+    width: 200px;
+    color: white;
+    font-size: 38px;
+    height: 200px;
+    background: #0e6ba8;
+    margin: 20px;
+}
+/*Cuando se posiciona una caja a la derecha y otra a la izquierda con float
+har un pequeño error que hace que la caja padre no los pueda abarcar a ambos y 
+desparace de la pagina
+*/
+
+.uno { /*si no se le pone float queda una caja abajo de la otra
+    es una de las formas de hacer columnas utilizar la propiedad float*/
+    float: left;
+}
+
+.dos {
+    float: right;
+}
+
+/*.clear {
+    clear: both;limpia el error de la caja padre
+}*/
+
+/*Nota. la propiedad float tenia como objetivo colocar texto alrededor 
+de una imagen no para maquetar paginas web*/
+.articulo {
+    width: 800px;
+    background: #ccc;
+}
+
+.articulo img {
+    float: left;
+}
